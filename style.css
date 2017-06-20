@@ -3,7 +3,7 @@ html,body{padding:0px;margin:0px;}
 li{list-style-type: none}
 kbrShop{font-size:14px;letter-spacing: 0.2px;}
 kbrShop ul, kbrShop p{margin:0px;padding: 0px;}
-
+kbrShop .center{text-align:center;}
 
 
 kbrShop h4{font-size: 100%;margin-top:0px;margin-bottom:17px;padding:0px;}
@@ -81,5 +81,14 @@ kbrShop a.addAddress{display: block;margin:30px auto 0px;background: url("./img/
 kbrShop dl.address{margin-top:0px;}
 kbrShop dl.address>dt{margin-bottom:10px;}
 kbrShop dl.address>dd{margin-left:0px;margin-bottom:18px;}
-kbrShop dl.address>dd>input{font-size:14px;border:2px solid rgba(184, 134, 185, 0.5);border-radius: 5px;box-sizing: border-box;padding:12px;width:100%;}
+kbrShop dl.address>dd>input, kbrShop dl.address>dd>textarea{font-size:14px;border:2px solid rgba(184, 134, 185, 0.5);border-radius: 5px;box-sizing: border-box;padding:12px;width:100%;}
 kbrShop dl.address>dd>input:placeholder-shown{border-color: rgba(164, 170, 179, 0.5)}
+kbrShop dl.address>dd>textarea:placeholder-shown{border-color: rgba(164, 170, 179, 0.5)}
+
+kbrShop div.order{position: relative;padding-top:16px;padding-bottom:16px;}
+kbrShop div.order status{font-size: 12px;position: absolute;right:24px;top:14px;}
+kbrShop div.order status.ok{color:rgb(92, 188, 72)}
+kbrShop div.order status.notOk{color:red}
+kbrShop div.order date{display:block;font-size: 12px;margin-bottom:5px;}
+
+kbrShop a.addNewAddr{display:block;margin:30px auto;text-align:center;color:rgb(184, 134, 185);text-decoration: none}
