@@ -62,7 +62,7 @@ kbrShop>content>slider.marged{margin-bottom:8px;}
 kbrShop>content>slider>like{display:block;position: absolute;width:24px;height:24px;top:20px;right:20px;background: url("./img/like.png") center no-repeat}
 kbrShop>content>slider>like.full{background: url("./img/likeFull.png") center no-repeat}
 
-kbrShop>content>input.search{font-size:14px;text-align:center;padding:13px 0px;width:100%;border:none;border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
+kbrShop>content>form>input.search{font-size:14px;text-align:center;padding:13px 0px;width:100%;border:none;border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
 
 kbrShop .bottom-delimetr{border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
 kbrShop div.padded{padding:24px;}
