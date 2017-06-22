@@ -32,8 +32,8 @@ kbrShop ul.catalog>li>a>div{height:150px;text-align: center;margin-bottom:20px;m
 kbrShop price{text-align:center;letter-spacing: 1px;display: block;margin-bottom:8px;font-size:16px;font-weight: bold}
 kbrShop price:after{content:"";}
 
-kbrShop .item>price{font-size: 18px;margin-bottom: -8px;}
-kbrShop .item p{line-height: 20px}
+kbrShop item>price{font-size: 18px;margin-bottom: -8px;}
+kbrShop item p{line-height: 20px}
 
 kbrShop ul.list>li, kbrShop ul.menu>li{border-bottom: 1px solid rgba(0, 0, 0, 0.05);letter-spacing: -0.2px;font-size: 16px;}
 kbrShop ul.list>li>a, kbrShop ul.menu>li>a{color: inherit;text-decoration: none;;display: block;padding:12.5px 0px 12.5px 24px}
