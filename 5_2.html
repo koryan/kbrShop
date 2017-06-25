@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KBR shop</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-language" content="ru-RU"> 
+  <meta http-equiv="Author" content="koryan@mail.ru"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<kbrShop>
+	<header>
+		Выборо способа покупки
+		<a class='back' href="#"></a>		
+	</header>	
+	<content>		
+		<chooser>
+			<label>
+				<input type="radio" name='chooser'>
+				<p>Купить как пользователь</p>
+				<span>Авторизованный пользователь может отслеживать статус заказа и иметь доступ к истории своих заказов.</span>
+			</label>
+			<label>
+				<input type="radio" name='chooser'>
+				<p>Купить как гость</p>
+				<span>Для совершения покупки просто заполните данные доставки и получайте уведомления на электронную почту.</span>
+				<label>
+					<p>Email</p>
+					<input type="text" placeholder="Email" name="mail">
+				</label>
+			</label>
+		</chooser>
+	</content>
+	<footer>		
+		<a class='btn wide' href="#">Войти</a>
+	</footer>
+</kbrShop>
+</body>
+</html>
