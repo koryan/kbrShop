@@ -118,3 +118,4 @@ kbrShop chooser>label>label{margin-top:20px;display: block;font-size:14px;}
 kbrShop chooser>label>label>p{color:rgb(51, 51, 51);margin-bottom:5px;opacity: 0.5}
 kbrShop chooser>label>label>input{font-size:14px;border:2px solid rgba(164, 170, 179, 0.5);border-radius: 5px;box-sizing: border-box;padding:12px;width:100%;}
 
+kbrShop content>adv{background-color: rgb(251, 209, 94);text-align: center;display: block;padding:10px 0px;font-size:11px;}
