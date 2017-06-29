@@ -6,6 +6,7 @@
   <meta http-equiv="Content-language" content="ru-RU"> 
   <meta http-equiv="Author" content="koryan@mail.ru"> 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script3.js"></script>
 </head>
 <body>
 <kbrShop>
@@ -16,23 +17,36 @@
 	<content>		
 		<chooser>
 			<label>
-				<input type="radio" name='chooser'>
+				<input type="radio" name='chooser' value="asuser">
 				<p>Купить как пользователь</p>
 				<span>Авторизованный пользователь может отслеживать статус заказа и иметь доступ к истории своих заказов.</span>
 			</label>
 			<label>
-				<input type="radio" name='chooser'>
+				<input type="radio" name='chooser' value="asguest">
 				<p>Купить как гость</p>
 				<span>Для совершения покупки просто заполните данные доставки и получайте уведомления на электронную почту.</span>
 				<label>
 					<p>Email</p>
-					<input type="text" placeholder="Email" name="mail">
+					<div class="input-wrap">
+						<input type="text" placeholder="Email" name="mail">
+						<div class="error-title">Необходимо ввести email</div>
+					</div>
+					
 				</label>
 			</label>
 		</chooser>
+		<div class="chkb-wrap">
+				<input type="checkbox" name="create_account" id="create_account1" class="checkbox" hidden>
+				<label for="create_account1"></label>
+				<div class="chkb-text">
+					<p>Создать учетную запись при покупке</p>
+					<p>Пароль будет выслан на почту</p>
+				</div>
+		</div>
+
 	</content>
 	<footer>		
-		<a class='btn wide' href="#">Войти</a>
+		<a class='btn wide enter-btn' href="#">Войти</a>
 	</footer>
 </kbrShop>
 </body>
