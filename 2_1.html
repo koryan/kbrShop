@@ -6,12 +6,17 @@
   <meta http-equiv="Content-language" content="ru-RU"> 
   <meta http-equiv="Author" content="koryan@mail.ru"> 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
 <kbrShop>
 	<header>Каталог</header>
 	<content>
-		<input class='search' type="text" placeholder="Поиск" />
+		<div class="search">
+			<input class='search' type="text" placeholder="Поиск" />
+			<ul class="found-items"></ul>	
+			<div class="cancel-btn">Отменить</div>
+		</div>
 		<ul class='list'>
 			<li><a href="#">Новинки</a></li><li>
 			<a href="#">Детская мебель</a></li><li>
