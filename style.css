@@ -65,7 +65,52 @@ kbrShop>content>slider.marged{margin-bottom:8px;}
 kbrShop>content>slider>like{display:block;position: absolute;width:24px;height:24px;top:20px;right:20px;background: url("./img/like.png") center no-repeat}
 kbrShop>content>slider>like.full{background: url("./img/likeFull.png") center no-repeat}
 
-kbrShop>content>form>input.search{font-size:14px;text-align:center;padding:13px 0px;width:100%;border:none;border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
+/* Search */
+
+kbrShop>content>.search{
+  position: relative;
+  width: 100%;
+}
+kbrShop>content>.search>input{font-size:14px;padding:15px 20px 15px 50px;width:100%;border:none;border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
+kbrShop>content>.search::before{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(img/icon_search.svg);
+  background-size: contain;
+  top: 13px;
+  left: 20px;
+  content: '';
+  display: block;
+}
+kbrShop>content>.search>.cancel-btn{
+  position: absolute;
+  cursor: pointer;
+  height: 1em;
+  color: #c7a1c8;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  font-weight: 500;
+}
+kbrShop>content>.search>.found-items{
+  position: absolute;
+  width: 60%;
+  background-color: #fff;
+  padding-left: 30px;
+  left: 0;
+  display: none;
+}
+kbrShop>content>.search>.found-items>li{
+  display: none;
+  color: #c7a1c8;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+
 
 kbrShop .bottom-delimetr{border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
 kbrShop div.padded{padding:24px;}
