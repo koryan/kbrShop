@@ -6,12 +6,17 @@
   <meta http-equiv="Content-language" content="ru-RU"> 
   <meta http-equiv="Author" content="koryan@mail.ru"> 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
 <kbrShop>
 	<header>Гигиена и здоровье<a class='back' href="#"></a></header>
 	<content>
-		<input class='search' type="text" placeholder="Поиск" />
+		<div class="search">
+			<input class='search' type="text" placeholder="Поиск" />
+			<ul class="found-items"></ul>	
+			<div class="cancel-btn">Отменить</div>
+		</div>
 		<ul class='list'>
 			<li><a href="#">Подгузники</a></li><li>
 			<a href="#" class='active'>Косметика для новорожденных</a></li><li>
