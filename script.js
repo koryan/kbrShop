@@ -22,6 +22,21 @@ function ready() {
         foundItemsContainer.appendChild(li);
     });
  
+    /* При фокусе расширить инпут */
+
+    searchInput.onfocus = function(){
+        if ( !this.parentNode.classList.contains('wide') ) {
+            this.parentNode.classList.add('wide'); 
+        }
+    };
+
+     searchInput.onblur = function(){
+        if ( this.parentNode.classList.contains('wide') && !this.value.length) {
+            this.parentNode.classList.remove('wide'); 
+            
+        }
+    };
+
     /* Поиск при вводе */ 
 
     searchInput.onkeyup = function(){
@@ -67,7 +82,7 @@ function ready() {
         var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
         var xhr = new XHR();
-        xhr.open('GET', 'ajax.txt', false);
+        xhr.open('GET', '/search/hints/', false);
 
         xhr.onload = function() {
             searchOptions = JSON.parse(this.responseText);
