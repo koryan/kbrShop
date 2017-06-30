@@ -21,11 +21,17 @@ kbrShop>header{position:relative;text-overflow: ellipsis;white-space: nowrap;;te
 kbrShop>header>a.forvard,kbrShop>header>a.back{position: absolute;top:9px;display: block;height: 25px;width:25px;background-color: red}
 kbrShop>header>a.forvard{right:5px;}
 kbrShop>header>a.back{left:5px;background: url(./img/icn_back.png) center no-repeat; }
-kbrShop>footer{display: block;flex: 0 0 auto;padding:20px 24px;border-top: 1px solid rgba(0, 0, 0, 0.05);}
+kbrShop>footer{display: block;flex: 0 0 auto;padding:20px 24px;}
 kbrShop>footer>a{line-height:20px;font-size: 12px;color: inherit;text-decoration: none;text-align: center;display: block;padding:19px 0px;}
 kbrShop>footer>p{text-align: center;margin-bottom: 10px;font-size: 16px;}
 
-kbrShop>content{display: block;flex: 1 0 auto;}
+kbrShop>content{
+  display: block;flex: 1 0 auto;
+}
+kbrShop>content.bottom-space {
+  margin-bottom: 75px;  
+}
+
 kbrShop>content>promo{display:block;text-align: center; text-transform: uppercase;padding:16px 0px;border-bottom:1px solid rgba(0, 0, 0, 0.05);}
 kbrShop ul.catalog>li{vertical-align:top;height:256px;width:50%;display: inline-block;border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
 kbrShop ul.catalog>li:nth-child(odd){box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.05)}
@@ -148,7 +154,18 @@ kbrShop>content>.search>.found-items>li{
 
 
 kbrShop .bottom-delimetr{border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
-kbrShop div.padded{padding:24px;}
+kbrShop div.padded {
+  padding:24px;
+}
+
+kbrShop div.add-to-cart-btn {
+  padding:5px 24px 24px 24px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
 kbrShop div.padded.small{padding:12px 24px ;}
 kbrShop div.padded.short{padding-top:0px;}
 kbrShop button{font-size:17px;background-color: rgb(184, 134, 185);color:white;width:100%;border:none;border-radius: 5px;padding:10px 0px;}
@@ -170,24 +187,118 @@ kbrShop dl.address>dd>input:placeholder-shown{border-color: rgba(164, 170, 179, 
 kbrShop dl.address>dd>textarea:placeholder-shown{border-color: rgba(164, 170, 179, 0.5)}
 
 kbrShop div.order{position: relative;padding-top:16px;padding-bottom:16px;}
+kbrShop div.order p b{ 
+  margin-right: 5px; 
+}
+
+kbrShop .profile .order p .big-text{ 
+  font-size: 18px; 
+}
+
+kbrShop .profile .order p.price { 
+   text-align: right;
+   margin-top: -22px;
+}
+
+kbrShop .profile .order span.shop { 
+   font-weight: bold;
+}
+
+kbrShop .profile .order p { 
+   margin-bottom: 5px;
+}
+
+kbrShop .profile profileButtons>a:nth-child(1) {
+    background-color: white;
+    color: rgb(184, 134, 185);
+    border-radius: 5px 0px 0px 5px;
+}
+
+kbrShop .profile profileButtons>a:nth-child(2) {
+  color: white;
+  background-color: rgb(184, 134, 185);
+  border-radius: 0px 3px 3px 0px;
+}
+
+
 kbrShop div.order status{font-size: 12px;position: absolute;right:24px;top:14px;}
 kbrShop div.order status.ok{color:rgb(92, 188, 72)}
 kbrShop div.order status.notOk{color:red}
 kbrShop div.order date{display:block;font-size: 12px;margin-bottom:5px;}
 
-kbrShop a.addNewAddr{display:block;margin:30px auto;text-align:center;color:rgb(184, 134, 185);text-decoration: none}
+kbrShop a.addNewAddr{
+
+  display:block;
+  margin:30px auto;
+  color:rgb(184, 134, 185);
+  text-decoration: none;
+  background: url(./img/addadress.png) right no-repeat;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-size: contain;
+  margin: 10px 22px;
+  min-width: 250px;
+}
 
 kbrShop basket{display: block;}
-kbrShop basket>item{display: block;position: relative;padding:17px 24px;border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
+
+kbrShop basket .delivery-wrap {
+  height: 32px;
+  background-color: rgb(251, 209, 94);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+kbrShop basket .delivery-wrap div{
+  display: inline-flex;
+  font-size: 11px;
+}
+
+kbrShop basket .delivery-wrap div:first-child {
+  padding-left: 20px;
+}
+
+kbrShop basket .delivery-wrap div:last-child {
+  padding-right: 20px;
+}
+
+kbrShop basket>item{display: block;position: relative;padding:17px 24px;}
 kbrShop basket>item>div{float:left;margin-right:10px;height:90px;width:80px; text-align: center;margin-bottom:20px;margin-top:2px;display: flex;justify-content: center; align-items: center;}
-kbrShop basket>item>a.remove{background-color:red;width:16px;height:16px;position: absolute;right:24px;top:20px;}
-kbrShop basket>item>qnt{display: block;color: rgb(184, 134, 185);}
+kbrShop basket>item>a.remove{
+  width:16px;
+  height:16px;
+  position: absolute;
+  right:24px;
+  top:20px;
+  background: url(img/icon-close.png) center no-repeat;
+  background-size: cover;
+}
+kbrShop basket>item>qnt{
+  display: block;
+  color: rgb(64, 70, 84);
+}
+kbrShop basket>item>qnt .minus,
+kbrShop basket>item>qnt .plus{
+ color: rgb(184, 134, 185);
+ font-weight: bold;
+}
+
+kbrShop basket>item>qnt .minus,
+kbrShop basket>item>qnt .quant {
+  margin-right: 5px;
+}
+
+kbrShop footer .summary {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 kbrShop basket>item>name{    margin-right: 20px;display: block;font-size: 16px;margin-bottom:5px;}
 kbrShop basket>item>params{display: block;color: rgb(147, 153, 164);font-size: 12px;margin-bottom:10px;}
-kbrShop basket>item>price{font-size:15px;display: block;position: absolute;right: 13px;bottom: 25px;}
-kbrShop basket>summary{display: block;padding:18px 24px;}
+kbrShop basket>item>price{font-size:15px;display: block; text-align: right; margin-top: -16px;}
+/*kbrShop basket>summary{display: block;padding:18px 24px;}
 kbrShop basket>summary>p{    margin-bottom: 7px;}
-kbrShop basket>summary>h4{font-size: 17px}
+kbrShop basket>summary>h4{font-size: 17px}*/
 
 kbrShop chooser{display: block;margin-top: 20px}
 kbrShop chooser>label{display: block;padding:13px 24px 17px 58px;position: relative}
