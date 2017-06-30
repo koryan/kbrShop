@@ -242,23 +242,23 @@ kbrShop a.addNewAddr{
 
 kbrShop basket{display: block;}
 
-kbrShop basket .delivery-wrap {
+kbrShop  .delivery-wrap {
   height: 32px;
   background-color: rgb(251, 209, 94);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-kbrShop basket .delivery-wrap div{
+kbrShop  .delivery-wrap div{
   display: inline-flex;
   font-size: 11px;
 }
 
-kbrShop basket .delivery-wrap div:first-child {
+kbrShop  .delivery-wrap div:first-child {
   padding-left: 20px;
 }
 
-kbrShop basket .delivery-wrap div:last-child {
+kbrShop  .delivery-wrap div:last-child {
   padding-right: 20px;
 }
 
@@ -355,4 +355,80 @@ kbrShop content .chkb-wrap .checkbox:checked + label {
   background-size: cover;
 
 }
+
+kbrShop content .sort-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  color: rgb(184, 134, 185);
+  font-size: 16px;
+  margin: 0 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+kbrShop content .sort {
+  background: url(./img/sort_arrows.png) right no-repeat;
+  background-size: 24px;
+  display: inline-flex;
+  padding-right: 35px;
+}
+
+kbrShop content .fav-row {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+kbrShop content .fav-row .item-cont {
+  width: 50%;
+  min-height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+kbrShop content .fav-row .item {
+  width: 186px;
+}
+
+kbrShop content .fav-row .item-cont img{
+  width: 138px;
+}
+
+kbrShop content .fav-row .item-cont .price {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+kbrShop content .fav-row .item-cont .desc {
+  text-align: center;
+}
+
+kbrShop content .fav-row .item-cont .item .img-cont {
+  display: flex;
+  justify-content: center;
+}
+
+kbrShop content .user-info {
+  font-size: 12px;
+}
+kbrShop content .user-info p:last-child {
+  margin-bottom: 8px;
+}
+
+kbrShop content.confirm .padded {
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+
+kbrShop content.confirm .del-text {
+  padding: 10px 24px 15px 24px;
+}
+
+
+
 
