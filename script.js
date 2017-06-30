@@ -22,6 +22,21 @@ function ready() {
         foundItemsContainer.appendChild(li);
     });
  
+    /* При фокусе расширить инпут */
+
+    searchInput.onfocus = function(){
+        if ( !this.parentNode.classList.contains('wide') ) {
+            this.parentNode.classList.add('wide'); 
+        }
+    };
+
+     searchInput.onblur = function(){
+        if ( this.parentNode.classList.contains('wide') && !this.value.length) {
+            this.parentNode.classList.remove('wide'); 
+            
+        }
+    };
+
     /* Поиск при вводе */ 
 
     searchInput.onkeyup = function(){
