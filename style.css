@@ -39,7 +39,11 @@ kbrShop ul.catalog>li>a{color: inherit;text-decoration: none;text-align: center}
 kbrShop ul.catalog>li>a>div{height:150px;text-align: center;margin-bottom:20px;margin-top:2px;display: flex;justify-content: center; align-items: center;}
 
 kbrShop price{text-align:center;letter-spacing: 1px;display: block;font-size:16px;font-weight: bold}
-kbrShop price:after{content:"";}
+kbrShop price:after{
+  content:"";
+  display: block;
+  clear: both;  
+}
 
 kbrShop item div.size{position: relative;}
 kbrShop item div.size>a{text-decoration:none;position: absolute;right:32px;top:12px;color:rgb(143, 142, 148);font-size:17px;}
@@ -191,7 +195,7 @@ kbrShop a.addAddress{
 kbrShop dl.address{margin-top:0px;}
 kbrShop dl.address>dt{margin-bottom:10px;}
 kbrShop dl.address>dd{margin-left:0px;margin-bottom:18px;}
-kbrShop dl.address>dd>input, kbrShop dl.address>dd>textarea{font-size:14px;border:2px solid rgba(184, 134, 185, 0.5);border-radius: 5px;box-sizing: border-box;padding:12px;width:100%;}
+kbrShop dl.address>dd>input, kbrShop dl.address>dd>textarea{font-size:14px;border:1px solid rgba(184, 134, 185, 0.5);border-radius: 5px;box-sizing: border-box;padding:12px;width:100%;}
 kbrShop dl.address>dd>input:placeholder-shown{border-color: rgba(164, 170, 179, 0.5)}
 kbrShop dl.address>dd>textarea:placeholder-shown{border-color: rgba(164, 170, 179, 0.5)}
 
@@ -595,3 +599,43 @@ kbrShop content.orders-history .user-info {
 kbrShop content.orders-history .user-info p:last-child{
   margin-bottom: 0;
 }
+
+kbrShop content.reviews .review .date{
+  font-style: italic;
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.54);
+  display: inline-block;
+}
+
+kbrShop content.reviews .review .rate{
+  float: right;
+}
+
+kbrShop content.reviews .review .name{
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+kbrShop content.reviews .review .detail{
+  font-size: 14px;
+}
+
+kbrShop content.reviews .padded {
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+
+kbrShop content.basket basket item div {
+  margin-bottom: 0;
+}
+
+kbrShop content.basket basket item {
+  padding: 16px 16px 0 16px;
+}
+
+kbrShop content.address-add-page .address dt {
+  font-weight: bold;
+}
+
