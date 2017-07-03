@@ -229,10 +229,31 @@ kbrShop .profile profileButtons>a:nth-child(2) {
   border-radius: 0px 3px 3px 0px;
 }
 
+kbrShop .orders-history div {
+  position: relative;
+}
+kbrShop div.order status,
+kbrShop .orders-history status {
+  font-size: 12px;
+  position: absolute;
+  right:24px;
+  top:14px;
+}
+kbrShop .orders-history status {
+  font-size: 12px;
+  position: absolute;
+  right:24px;
+  top:0;
+}
+kbrShop div.order status.ok,
+kbrShop .orders-history status.ok {
+  color:rgb(92, 188, 72);
+}
+kbrShop div.order status.notOk,
+kbrShop .orders-history status.notOk {
+  color:red;
 
-kbrShop div.order status{font-size: 12px;position: absolute;right:24px;top:14px;}
-kbrShop div.order status.ok{color:rgb(92, 188, 72)}
-kbrShop div.order status.notOk{color:red}
+}
 kbrShop div.order date{display:block;font-size: 12px;margin-bottom:5px;}
 
 kbrShop a.addNewAddr{
@@ -471,9 +492,13 @@ kbrShop content.confirm basket summary {
 }
 
 kbrShop content.confirm basket summary h4 {
-  margin-top: 20px;
+  margin-top: 16px;
   text-align: center;
   font-size: 15px;
+}
+
+kbrShop content.confirm basket summary p {
+  margin-bottom: 5px;
 }
 
 kbrShop content.confirm basket>item>div {
@@ -536,4 +561,37 @@ kbrShop content.profile-profile a.addAddress{
 kbrShop content.profile-profile .add-address {
   padding-bottom: 12px;
   padding-left: 22px;
+}
+
+kbrShop content.orders-history .pink{
+  color: rgb(184, 134, 185);
+}
+
+kbrShop content.orders-history .general .pink{
+  color: rgb(184, 134, 185);
+}
+
+kbrShop content.orders-history .general-wrap {
+  padding: 17px 16px 8px 16px;
+}
+
+kbrShop content.orders-history .general p{
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+
+kbrShop content.orders-history .general .order-num{
+  font-size: 18px;
+}
+
+kbrShop content.orders-history .status {
+  margin-bottom: 8px;
+}
+
+kbrShop content.orders-history .user-info {
+  padding: 8px 16px;
+}
+kbrShop content.orders-history .user-info p:last-child{
+  margin-bottom: 0;
 }
