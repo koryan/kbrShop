@@ -176,7 +176,16 @@ kbrShop profileButtons{border:1px solid rgb(184, 134, 185);border-radius: 5px;di
 kbrShop profileButtons>a{display:inline-block;width:50%;text-align:center;padding:5px 0px;text-decoration: none}
 kbrShop profileButtons>a:nth-child(1){color:white;background-color: rgb(184, 134, 185);border-radius: 3px 0px 0px 3px}
 kbrShop profileButtons>a:nth-child(2){background-color:white;color: rgb(184, 134, 185);border-radius: 0px 5px 5px 0px}
-kbrShop a.addAddress{border-bottom: 1px solid rgba(0, 0, 0, 0.05);display: block;background: url("./img/addadress.png")  right no-repeat;color:rgb(184, 134, 185);text-decoration: none;padding:12px 24px;font-size: 17px}
+kbrShop a.addAddress{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: block;
+  background: url("./img/addadress.png")  right no-repeat;
+  color:rgb(184, 134, 185);
+  text-decoration: none;
+  padding:12px 24px;
+  font-size: 17px;
+  background-size: 28px;
+}
 
 
 kbrShop dl.address{margin-top:0px;}
@@ -220,10 +229,31 @@ kbrShop .profile profileButtons>a:nth-child(2) {
   border-radius: 0px 3px 3px 0px;
 }
 
+kbrShop .orders-history div {
+  position: relative;
+}
+kbrShop div.order status,
+kbrShop .orders-history status {
+  font-size: 12px;
+  position: absolute;
+  right:24px;
+  top:14px;
+}
+kbrShop .orders-history status {
+  font-size: 12px;
+  position: absolute;
+  right:24px;
+  top:0;
+}
+kbrShop div.order status.ok,
+kbrShop .orders-history status.ok {
+  color:rgb(92, 188, 72);
+}
+kbrShop div.order status.notOk,
+kbrShop .orders-history status.notOk {
+  color:red;
 
-kbrShop div.order status{font-size: 12px;position: absolute;right:24px;top:14px;}
-kbrShop div.order status.ok{color:rgb(92, 188, 72)}
-kbrShop div.order status.notOk{color:red}
+}
 kbrShop div.order date{display:block;font-size: 12px;margin-bottom:5px;}
 
 kbrShop a.addNewAddr{
@@ -413,7 +443,8 @@ kbrShop content .fav-row .item-cont .item .img-cont {
   justify-content: center;
 }
 
-kbrShop content .user-info {
+kbrShop content .user-info,
+kbrShop content .del-text {
   font-size: 12px;
 }
 kbrShop content .user-info p:last-child {
@@ -429,6 +460,138 @@ kbrShop content.confirm .del-text {
   padding: 10px 24px 15px 24px;
 }
 
+kbrShop content.confirm h5 {
+  font-size: 16px;
+}
+
+kbrShop content.confirm basket name {
+  font-size: 16px;
+}
+
+kbrShop content.confirm basket params {
+  margin-bottom: 20px;
+} 
+
+kbrShop content.confirm basket item {
+  padding-bottom: 0;
+}
+
+kbrShop content.confirm basket item qnt{
+  font-size: 11px;
+}
+
+kbrShop content.confirm basket item::after {
+  display: block;
+  content: '';
+  clear: both;
+} 
+
+kbrShop content.confirm basket summary {
+  margin-top: 30px;
+  text-align: center;
+}
+
+kbrShop content.confirm basket summary h4 {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 15px;
+}
+
+kbrShop content.confirm basket summary p {
+  margin-bottom: 5px;
+}
+
+kbrShop content.confirm basket>item>div {
+  margin-bottom: 15px;
+}
+
+kbrShop content.confirm + footer a {
+  font-size: 14px;
+}
+
+kbrShop content.order-end h2 {
+  font-size: 21px;
+  color: rgb(184, 134, 185);
+  text-align: center;
+  font-weight: normal;
+  margin-top: 24px;
+}
+
+kbrShop content.order-end p{
+  font-size: 15px;
+}
+
+kbrShop content.order-end p span.order-num{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+kbrShop content.order-end .padded{
+  padding-bottom: 11px;
+  padding-left: 16px;
+}
+kbrShop content.order-end .order-info p{
+  margin-bottom: 8px;
+}
+
+kbrShop content.profile-profile p {
+  font-size: 16px;
+}
+
+kbrShop content.profile-profile h3 {
+  font-size: 16px;
+}
+
+kbrShop content.profile-profile .addresses h3 {
+  background: url(img/address-edit-btn.png) right no-repeat;
+  background-size: 24px;
+  margin-right: 16px;
+  margin-top: 13px;
+}
+
+kbrShop content.profile-profile .addresses p{
+  font-size: 12px;
+}
+
+kbrShop content.profile-profile a.addAddress{
+  margin-right: 41px;
+  padding-left: 10px;
+}
+
+kbrShop content.profile-profile .add-address {
+  padding-bottom: 12px;
+  padding-left: 22px;
+}
+
+kbrShop content.orders-history .pink{
+  color: rgb(184, 134, 185);
+}
+
+kbrShop content.orders-history .general .pink{
+  color: rgb(184, 134, 185);
+}
+
+kbrShop content.orders-history .general-wrap {
+  padding: 17px 16px 8px 16px;
+}
+
+kbrShop content.orders-history .general p{
+  font-size: 14px;
+  margin-bottom: 4px;
+}
 
 
+kbrShop content.orders-history .general .order-num{
+  font-size: 18px;
+}
 
+kbrShop content.orders-history .status {
+  margin-bottom: 8px;
+}
+
+kbrShop content.orders-history .user-info {
+  padding: 8px 16px;
+}
+kbrShop content.orders-history .user-info p:last-child{
+  margin-bottom: 0;
+}

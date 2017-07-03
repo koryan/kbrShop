@@ -9,22 +9,58 @@
 </head>
 <body>
 <kbrShop>
-	<header>Профиль</header>
-	<content>		
-		<div class="padded  bottom-delimetr order">
-			<status class="ok">Доставлен</status> <!-- class="notOk" -->
-			<date>20 апреля 20017</date>
-			<number>№ 324193409</number>
-			<address>564234, Волгоград, Волгоградская облась, Московская, 4, 75</address>
-			<info>
-				Доставлен: 30 апреля 2017<br />
-				Магазин: Mothecare<br />
-				Контакты магазина: +7 986 573 89 76
-			</info>
-		</div>		
-		<div class="padded  bottom-delimetr order">
-		</div>
+	<header>
+		№324193409
+		<a class='back' href="#"></a>		
+	</header>	
+	<content class="confirm orders-history">		
+		<div class='general-wrap bottom-delimetr'>
+			<div class="status">20 апреля 2017
+				<status class="ok">Доставлен</status> <!-- class="notOk" -->
+			</div>
+			<div class="general">
+				<p class="order-num"><b>Заказ №: 324193409</b></p>
+				<p><b>Магазин:</b> Mothecare</p>
+				<p><b>Контакты магазина:</b> <span class="pink">+7 (925) 452-44-71</span></p>
+			</div>
+		</div>	
+		<div class="user-info bottom-delimetr">
+			<p><b>ФИО: </b>Иванов Дмитрий Александрович</p>	
+			<p><b>Адрес: </b>г. Москва, пр-кт Маржала-Жукова, д.7, корп. 1, кв. 309, 7 этаж</p>	
+			<p><b>Телефон: </b>+7 (983) 987 89 88</p>	
+			<p><b>Комментарий: </b>код домофона – 67</p>		 
+		</div>	
+		
+		<basket>
+			<item class="bottom-delimetr">
+				<div><img src="https://placekitten.com/40/60" /></div>
+				<name>Боди «Зебра» длинное название</name>
+				<params>
+					Размер: 6-9 месяцев<br />
+					Цвет: Универсальный
+				</params>
+				<qnt>Добавлено: 1</qnt>				
+				<price>1867 руб.</price>
+			</item>
+			<item class="bottom-delimetr">
+				<div><img src="https://placekitten.com/40/60" /></div>
+				<name>Боди «Зебра» длинное название</name>
+				<params>
+					Размер: 6-9 месяцев<br />
+					Цвет: Универсальный
+				</params>
+				<qnt>Добавлено: 1</qnt>				
+				<price>1867 руб.</price>
+			</item>
+			
+			<summary>
+				<p><b>3 товара на сумму:</b> 5 601 руб.</p>
+				<p><b>Доставка:</b> 300 руб.</p>
+				<h4>ИТОГО: 5 901 руб.</h4>
+			</summary>
+		</basket>
 	</content>
+	
 </kbrShop>
 </body>
 </html>
