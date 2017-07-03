@@ -475,3 +475,28 @@ kbrShop content.confirm + footer a {
   font-size: 14px;
 }
 
+kbrShop content.order-end h2 {
+  font-size: 21px;
+  color: rgb(184, 134, 185);
+  text-align: center;
+  font-weight: normal;
+  margin-top: 24px;
+}
+
+kbrShop content.order-end p{
+  font-size: 15px;
+}
+
+kbrShop content.order-end p span.order-num{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+kbrShop content.order-end .padded{
+  padding-bottom: 11px;
+  padding-left: 16px;
+}
+kbrShop content.order-end .order-info p{
+  margin-bottom: 8px;
+}
+
