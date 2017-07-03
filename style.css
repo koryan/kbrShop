@@ -81,10 +81,10 @@ kbrShop ul.menu>li.active>a>status.opened {
 }
 
 kbrShop ul.menu>li>ul,
-kbrShop ul.menu>li>.review
+kbrShop ul.menu>li>.review-block
 {margin: 0px 24px 16px;display:none;}
 kbrShop ul.menu>li.active>ul,
-kbrShop ul.menu>li.active>.review
+kbrShop ul.menu>li.active>.review-block
 {display: block;}
 kbrShop ul.menu>li>ul>li{padding:5.5px 0px;font-size:15px;}
 
@@ -600,32 +600,63 @@ kbrShop content.orders-history .user-info p:last-child{
   margin-bottom: 0;
 }
 
-kbrShop content.reviews .review .date{
+kbrShop content.reviews .review .date,
+kbrShop .review-block .review .date {
   font-style: italic;
   font-size: 12px;
   color: rgba(51, 51, 51, 0.54);
   display: inline-block;
 }
 
-kbrShop content.reviews .review .rate{
+kbrShop .review-block .review .date {
+  margin-top: 5px;
+}
+
+kbrShop content.reviews .review .rate,
+kbrShop .review-block .review .rate {
   float: right;
 }
 
-kbrShop content.reviews .review .name{
+kbrShop content.reviews .review .name, 
+kbrShop .review-block .review .name {
   font-size: 16px;
   margin-top: 8px;
   margin-bottom: 5px;
   font-weight: 600;
 }
 
-kbrShop content.reviews .review .detail{
-  font-size: 14px;
+kbrShop content.reviews .review .detail,
+kbrShop .review-block .review .detail {
+  font-size: 15px;
 }
 
-kbrShop content.reviews .padded {
+kbrShop .review-block .review .detail {
+  margin-bottom: 5px;
+}
+
+kbrShop content.reviews .padded 
+{
   padding-bottom: 13px;
   padding-top: 13px;
 }
+
+kbrShop content.reviews .review .rate .star,
+kbrShop content.reviews .review .rate .star-empty, 
+kbrShop .review-block .review .rate .star,
+kbrShop .review-block .review .rate .star-empty {
+  background: url(img/rate-star.png) center no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size: 16px;
+}
+
+kbrShop content.reviews .review .rate .star-empty,
+kbrShop .review-block .review .rate .star-empty {
+  background: url(img/rate-star-empty.png) center no-repeat;
+  background-size: 16px;
+}
+
 
 kbrShop content.basket basket item div {
   margin-bottom: 0;
@@ -639,3 +670,6 @@ kbrShop content.address-add-page .address dt {
   font-weight: bold;
 }
 
+kbrShop content.reviews + footer a {
+  font-size: 17px;
+}
