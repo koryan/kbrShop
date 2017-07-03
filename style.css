@@ -640,8 +640,8 @@ kbrShop content.reviews .padded
   padding-top: 13px;
 }
 
-kbrShop content.reviews .review .rate .star,
-kbrShop content.reviews .review .rate .star-empty, 
+kbrShop content.reviews  .rate .star,
+kbrShop content.reviews  .rate .star-empty, 
 kbrShop .review-block .review .rate .star,
 kbrShop .review-block .review .rate .star-empty {
   background: url(img/rate-star.png) center no-repeat;
@@ -651,7 +651,7 @@ kbrShop .review-block .review .rate .star-empty {
   background-size: 16px;
 }
 
-kbrShop content.reviews .review .rate .star-empty,
+kbrShop content.reviews  .rate .star-empty,
 kbrShop .review-block .review .rate .star-empty {
   background: url(img/rate-star-empty.png) center no-repeat;
   background-size: 16px;
@@ -673,3 +673,46 @@ kbrShop content.address-add-page .address dt {
 kbrShop content.reviews + footer a {
   font-size: 17px;
 }
+
+kbrShop content.add-review {
+  padding: 14px 16px;
+}
+
+kbrShop content.add-review h3 {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+kbrShop content.add-review .rate {
+  margin-top: 16px;
+  padding-bottom: 13px;
+ 
+}
+
+kbrShop content.add-review .rate .star,
+kbrShop content.add-review .rate .star-empty {
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+
+kbrShop content.add-review .label {
+  margin-top: 13px;
+  font-size: 16px;
+}
+
+kbrShop content.add-review input {
+ padding: 8px 0;
+ border: none;
+ font-size: 16px;
+ width: 100%;
+ margin-right: 32px;
+ outline: none;
+ color: rgba( 51, 51, 51, 0.54);
+ }
+
+ kbrShop content.add-review input::-webkit-input-placeholder {color:rgba( 51, 51, 51, 0.54);}
+kbrShop content.add-review input::-moz-placeholder          {color:rgba( 51, 51, 51, 0.54);}/* Firefox 19+ */
+kbrShop content.add-review input:-moz-placeholder           {color:rgba( 51, 51, 51, 0.54);}/* Firefox 18- */
+kbrShop content.add-review input:-ms-input-placeholder      {color:rgba( 51, 51, 51, 0.54);}
