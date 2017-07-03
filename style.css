@@ -413,7 +413,8 @@ kbrShop content .fav-row .item-cont .item .img-cont {
   justify-content: center;
 }
 
-kbrShop content .user-info {
+kbrShop content .user-info,
+kbrShop content .del-text {
   font-size: 12px;
 }
 kbrShop content .user-info p:last-child {
@@ -429,6 +430,48 @@ kbrShop content.confirm .del-text {
   padding: 10px 24px 15px 24px;
 }
 
+kbrShop content.confirm h5 {
+  font-size: 16px;
+}
 
+kbrShop content.confirm basket name {
+  font-size: 16px;
+}
 
+kbrShop content.confirm basket params {
+  margin-bottom: 20px;
+} 
+
+kbrShop content.confirm basket item {
+  padding-bottom: 0;
+}
+
+kbrShop content.confirm basket item qnt{
+  font-size: 11px;
+}
+
+kbrShop content.confirm basket item::after {
+  display: block;
+  content: '';
+  clear: both;
+} 
+
+kbrShop content.confirm basket summary {
+  margin-top: 30px;
+  text-align: center;
+}
+
+kbrShop content.confirm basket summary h4 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+kbrShop content.confirm basket>item>div {
+  margin-bottom: 15px;
+}
+
+kbrShop content.confirm + footer a {
+  font-size: 14px;
+}
 
