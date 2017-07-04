@@ -157,7 +157,7 @@ kbrShop>content>.search>.found-items>li{
 
 
 
-kbrShop .bottom-delimetr{border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+kbrShop .bottom-delimetr{border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
 kbrShop div.padded {
   padding:24px;
 }
