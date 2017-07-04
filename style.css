@@ -609,7 +609,8 @@ kbrShop .review-block .review .date {
 }
 
 kbrShop .review-block .review .date {
-  margin-top: 5px;
+  margin-top: 13px;
+  line-height: 1;
 }
 
 kbrShop content.reviews .review .rate,
@@ -621,8 +622,9 @@ kbrShop content.reviews .review .name,
 kbrShop .review-block .review .name {
   font-size: 16px;
   margin-top: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-weight: 600;
+  line-height: 1;
 }
 
 kbrShop content.reviews .review .detail,
@@ -657,6 +659,13 @@ kbrShop .review-block .review .rate .star-empty {
   background-size: 16px;
 }
 
+kbrShop .review-block .review .detail {
+  margin-bottom: 11px;
+}
+
+kbrShop .review-block .reviewLinks {
+  padding-top: 15px !important;
+}
 
 kbrShop content.basket basket item div {
   margin-bottom: 0;
