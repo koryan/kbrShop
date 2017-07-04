@@ -26,7 +26,17 @@ kbrShop a.btn.wide{width:100%;margin-bottom:10px;}
 kbrShop a.btn.reverse{color: rgb(184, 134, 185);background-color:white}
 
 kbrShop{font-family: -apple-system, BlinkMacSystemFont, sans-serif;color: rgb(51,51,51)}
-kbrShop>header{position:relative;text-overflow: ellipsis;white-space: nowrap;;text-align: center; padding:14px 32px;display:block;background-color: rgb(237, 238, 240);font-size: 16px}
+kbrShop>header{
+  position:relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  padding:14px 32px;
+  display:block;
+  background-color: rgb(237, 238, 240);
+  font-size: 16px;
+  height: 44px;
+}
 kbrShop>header>a.forvard,kbrShop>header>a.back{position: absolute;top:9px;display: block;height: 25px;width:25px;background-color: red}
 kbrShop>header>a.forvard{right:5px;}
 kbrShop>header>a.back{left:5px;background: url(./img/icn_back.png) center no-repeat; }
