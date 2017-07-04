@@ -68,7 +68,8 @@ function ready() {
         
     /* Очистка поля ввода */
 
-    cancelBtn.onclick = function(){
+    cancelBtn.onclick = function(e){
+        e.preventDefault();
         searchInput.value = '';
         foundItemsContainer.style.display = "none";
     };    
@@ -98,4 +99,6 @@ function ready() {
 
 /*** */
 
+
 }
+
