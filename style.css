@@ -26,7 +26,7 @@ kbrShop a.btn.wide{width:100%;margin-bottom:10px;}
 kbrShop a.btn.reverse{color: rgb(184, 134, 185);background-color:white}
 
 kbrShop{font-family: -apple-system, BlinkMacSystemFont, sans-serif;color: rgb(51,51,51)}
-kbrShop>header {
+kbrShop header {
   position:relative;
   white-space: nowrap;
   display:block;
@@ -34,7 +34,7 @@ kbrShop>header {
   font-size: 16px;
   height: 44px;
 }
-kbrShop>header p {
+kbrShop header p {
   position: absolute;
   top: 0;
   bottom: 0;
