@@ -26,16 +26,27 @@ kbrShop a.btn.wide{width:100%;margin-bottom:10px;}
 kbrShop a.btn.reverse{color: rgb(184, 134, 185);background-color:white}
 
 kbrShop{font-family: -apple-system, BlinkMacSystemFont, sans-serif;color: rgb(51,51,51)}
-kbrShop>header{
+kbrShop>header {
   position:relative;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  text-align: center;
-  padding:14px 32px;
   display:block;
   background-color: rgb(237, 238, 240);
   font-size: 16px;
+  height: 44px;
 }
+kbrShop>header p {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  top: 50%;
+  margin-top: -0.625em;
+}
+
 kbrShop>header>a.forvard,kbrShop>header>a.back{position: absolute;top:9px;display: block;height: 25px;width:25px;background-color: red}
 kbrShop>header>a.forvard{right:5px;}
 kbrShop>header>a.back{left:5px;background: url(./img/icn_back.png) center no-repeat; }
@@ -286,7 +297,7 @@ kbrShop a.addNewAddr{
   background: url(./img/addadress.png) right no-repeat;
   padding: 12px 24px;
   font-size: 16px;
-  background-size: contain;
+  background-size: 28px;
   margin: 10px 22px;
   min-width: 250px;
 }
@@ -314,7 +325,19 @@ kbrShop  .delivery-wrap div:last-child {
 }
 
 kbrShop basket>item{display: block;position: relative;padding:17px 24px;}
-kbrShop basket>item>div{float:left;margin-right:10px;height:90px;width:80px; text-align: center;margin-bottom:20px;margin-top:2px;display: flex;justify-content: center; align-items: center;}
+kbrShop basket>item .img-wrap{
+  float:left;
+  margin-right:17px;
+  height:104px;
+  width:104px;
+   text-align: center;
+   margin-bottom:20px;
+   margin-top:2px;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   overflow: hidden;
+}
 kbrShop basket>item>a.remove{
   width:16px;
   height:16px;
@@ -436,9 +459,12 @@ kbrShop content .fav-row .item-cont {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
+kbrShop content .fav-row .item-cont:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
 kbrShop content .fav-row .item {
   width: 186px;
 }
@@ -699,7 +725,8 @@ kbrShop content.basket basket item {
   padding: 16px 16px 0 16px;
 }
 
-kbrShop content.address-add-page .address dt {
+kbrShop content.address-add-page .address dt,
+kbrShop content.delivery-data .address dt {
   font-weight: bold;
 }
 

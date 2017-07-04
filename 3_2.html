@@ -6,6 +6,9 @@
   <meta http-equiv="Content-language" content="ru-RU"> 
   <meta http-equiv="Author" content="koryan@mail.ru"> 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="jquery.maskedinput.min.js"></script>
+  <script src="script4.js"></script>
 </head>
 <body>
 <kbrShop>
@@ -16,14 +19,14 @@
 	<content class="address-add-page">		
 		<div class='padded'>
 			<dl class='address'>
-				<dt>ФИО</dt>
-					<dd><input type="text" placeholder="Фамилия" value="Иванов" /></dd>
-				<dt>Телефон</dt>
-					<dd><input type="text" placeholder="Город" /></dd>
-				<dt>Адрес</dt>
-					<dd><input type="text" placeholder="Адрес" /></dd>
+				<dt>ФИО*</dt>
+					<dd><input type="text" placeholder="Иванова Наталья Сергеевна"  /></dd>
+				<dt>Телефон*</dt>
+					<dd><input id="phone-input" type="text" placeholder="+7 (___) ___-____"  /></dd>
+				<dt>Адрес*</dt>
+					<dd><textarea placeholder="Город, улица, дом, корпус, квартира"></textarea></dd>
 				<dt>Комментарий</dt>
-					<dd><input type="text" placeholder="Почтовый индекс" /></dd>
+					<dd><textarea placeholder="Комментарий"></textarea></dd>
 			</dl>
 			<a class='btn wide' href="#">Добавить</a>
 			<a class='btn wide reverse' href="#">Отменить</a>

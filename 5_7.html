@@ -6,6 +6,9 @@
   <meta http-equiv="Content-language" content="ru-RU"> 
   <meta http-equiv="Author" content="koryan@mail.ru"> 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="jquery.maskedinput.min.js"></script>
+  <script src="script4.js"></script>
 </head>
 <body>
 <kbrShop>
@@ -13,15 +16,15 @@
 		Данные для доставки
 		<a class='back' href="#"></a>		
 	</header>	
-	<content>		
+	<content class="delivery-data">		
 		<div class='padded'>
 			<dl class='address'>
 				<dt>ФИО*</dt>
 					<dd><input type="text" placeholder="Иванова Наталья Сергеевна" /></dd>
-				<dt>Контактный телефон*</dt>
-					<dd><input type="text" placeholder="+7 (___) ___ __ __"  /></dd>
+				<dt>Tелефон*</dt>
+					<dd><input id="phone-input" type="text" placeholder="+7 (___) ___-____"  /></dd>
 				<dt>Адрес*</dt>
-					<dd><textarea placeholder="Индекс, область, город, улица, дом, корпус, квартира"></textarea></dd>
+					<dd><textarea placeholder="Город, улица, дом, корпус, квартира"></textarea></dd>
 				<dt>Комментарий</dt>
 					<dd><textarea placeholder="Комментарий"></textarea></dd>
 			</dl>
