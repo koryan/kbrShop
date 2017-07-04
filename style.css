@@ -157,7 +157,7 @@ kbrShop>content>.search>.found-items>li{
 
 
 
-kbrShop .bottom-delimetr{border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
+kbrShop .bottom-delimetr{border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
 kbrShop div.padded {
   padding:24px;
 }
@@ -181,7 +181,6 @@ kbrShop profileButtons>a{display:inline-block;width:50%;text-align:center;paddin
 kbrShop profileButtons>a:nth-child(1){color:white;background-color: rgb(184, 134, 185);border-radius: 3px 0px 0px 3px}
 kbrShop profileButtons>a:nth-child(2){background-color:white;color: rgb(184, 134, 185);border-radius: 0px 5px 5px 0px}
 kbrShop a.addAddress{
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   display: block;
   background: url("./img/addadress.png")  right no-repeat;
   color:rgb(184, 134, 185);
@@ -546,6 +545,10 @@ kbrShop content.profile-profile h3 {
   font-size: 16px;
 }
 
+kbrShop content.profile-profile .addresses {
+  padding-bottom: 14px;
+}
+
 kbrShop content.profile-profile .addresses h3 {
   background: url(img/address-edit-btn.png) right no-repeat;
   background-size: 24px;
@@ -557,13 +560,16 @@ kbrShop content.profile-profile .addresses p{
   font-size: 12px;
 }
 
+kbrShop content.profile-profile .main-info {
+  padding-bottom: 12px;
+}
+
 kbrShop content.profile-profile a.addAddress{
   margin-right: 41px;
   padding-left: 10px;
 }
 
 kbrShop content.profile-profile .add-address {
-  padding-bottom: 12px;
   padding-left: 22px;
 }
 
@@ -609,7 +615,8 @@ kbrShop .review-block .review .date {
 }
 
 kbrShop .review-block .review .date {
-  margin-top: 5px;
+  margin-top: 13px;
+  line-height: 1;
 }
 
 kbrShop content.reviews .review .rate,
@@ -621,8 +628,9 @@ kbrShop content.reviews .review .name,
 kbrShop .review-block .review .name {
   font-size: 16px;
   margin-top: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-weight: 600;
+  line-height: 1;
 }
 
 kbrShop content.reviews .review .detail,
@@ -657,6 +665,13 @@ kbrShop .review-block .review .rate .star-empty {
   background-size: 16px;
 }
 
+kbrShop .review-block .review .detail {
+  margin-bottom: 11px;
+}
+
+kbrShop .review-block .reviewLinks {
+  padding-top: 15px !important;
+}
 
 kbrShop content.basket basket item div {
   margin-bottom: 0;
