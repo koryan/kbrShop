@@ -83,7 +83,7 @@ function ready() {
         var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
         var xhr = new XHR();
-        xhr.open('GET', 'ajax.txt', false);
+        xhr.open('GET', '/search/hints/', false);
 
         xhr.onload = function() {
             searchOptions = JSON.parse(this.responseText);
