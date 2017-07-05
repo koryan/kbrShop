@@ -214,11 +214,13 @@ kbrShop div.padded.short{padding-top:0px;}
 kbrShop button{font-size:17px;background-color: rgb(184, 134, 185);color:white;width:100%;border:none;border-radius: 5px;padding:10px 0px;}
 kbrShop p{line-height: 17px}
 
+kbrShop profileButtons>a{display:inline-block;width:50%;text-align:center;padding:5px 0px;text-decoration: none} 
+kbrShop profileButtons>a:nth-child(1){color:white;background-color: rgb(184, 134, 185);border-radius: 3px 0px 0px 3px} 
+kbrShop profileButtons>a:nth-child(1){background-color:white;color: rgb(184, 134, 185);border-radius: 5px 0px 0px 5px} 
+kbrShop profileButtons>a:nth-child(2){background-color:white;color: rgb(184, 134, 185);border-radius: 0px 5px 5px 0px} 
+kbrShop profileButtons>a.active:nth-child(1){color:white;background-color: rgb(184, 134, 185);border-radius: 3px 0px 0px 3px} 
+kbrShop profileButtons>a.active:nth-child(2){color:white;background-color: rgb(184, 134, 185);border-radius: 0px 3px 3px 0px} 
 
-kbrShop profileButtons{border:1px solid rgb(184, 134, 185);border-radius: 5px;display: block}
-kbrShop profileButtons>a{display:inline-block;width:50%;text-align:center;padding:5px 0px;text-decoration: none}
-kbrShop profileButtons>a:nth-child(1){color:white;background-color: rgb(184, 134, 185);border-radius: 3px 0px 0px 3px}
-kbrShop profileButtons>a:nth-child(2){background-color:white;color: rgb(184, 134, 185);border-radius: 0px 5px 5px 0px}
 kbrShop a.addAddress{
   display: block;
   background: url("./img/addadress.png")  right no-repeat;
