@@ -10,9 +10,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 html,body{padding:0px;margin:0px;height: 100%;}
 li{list-style-type: none}
-kbrShop{font-size:14px;letter-spacing: 0.2px;display: flex;
+kbrShop{
+  font-size:14px;
+  letter-spacing: 0.2px;
+  display: flex;
   flex-direction: column;
-  height: 100%;}
+  }
 kbrShop ul, kbrShop p{margin:0px;padding: 0px;}
 kbrShop .center{text-align:center;}
 
@@ -25,8 +28,11 @@ kbrShop a.btn{text-decoration:none;text-align:center;display: block;background-c
 kbrShop a.btn.wide{width:100%;margin-bottom:10px;}
 kbrShop a.btn.reverse{color: rgb(184, 134, 185);background-color:white}
 
-kbrShop{font-family: -apple-system, BlinkMacSystemFont, sans-serif;color: rgb(51,51,51)}
-kbrShop header {
+kbrShop{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgb(51,51,51)
+  }
+kbrShop>header {
   position:relative;
   white-space: nowrap;
   display:block;
@@ -34,7 +40,7 @@ kbrShop header {
   font-size: 16px;
   height: 44px;
 }
-kbrShop header p {
+kbrShop>header p {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -139,7 +145,11 @@ kbrShop>content>.search.wide{
   width: 100%;
 }
 
-kbrShop>content>.search>input{font-size:14px;padding:15px 20px 15px 50px;width:100%;border:none;border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
+kbrShop>content>.search>input{
+  font-size:14px;
+  padding:15px 20px 15px 50px;
+  width:100%;border:none;
+  }
 kbrShop>content>.search .search-icon{
   position: absolute;
   width: 20px;
